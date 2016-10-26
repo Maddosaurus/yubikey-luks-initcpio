@@ -1,6 +1,13 @@
 Yubikey for LUKS, initcpio / Arch Linux style
 ================
 
+## Changes made by Maddosaurus
+Actually, I adapted the script in some detail.  
+First of all, I replaced the path of ykchalresp, as I installed it globally via AUR.  
+Second, I changed the console output to lower case.  
+
+__Addendum: Please do not forget to call `sudo mkinitcpio -p linux` after updating your mkinitcpio.conf_
+
 How it works
 ----------------
 initcpio hooks to allow you to use a yubikey in challenge-response HMAC
